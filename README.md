@@ -4,7 +4,7 @@ This SQL project explores **Major League Baseball (MLB) player and salary data**
 
 # Objectives
 ### Part I: School Analysis
-1- **Schools by Decade:** Count of schools producing MLB players each decade.
-2- **Top Schools:** Identified the top 5 schools with the most MLB players.
-3- **Top Schools by Decade:** Ranked the top 3 schools per decade based on player production.
+1. **Schools by Decade:** Count of schools producing MLB players each decade.
+2. **Top Schools:** Identified the top 5 schools with the most MLB players.
+3. **Top Schools by Decade:** Ranked the top 3 schools per decade based on player production.
 
