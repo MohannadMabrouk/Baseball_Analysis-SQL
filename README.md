@@ -8,9 +8,14 @@ The analysis is divided into four main parts, each focused on answering specific
 
 ## Part I: School Analysis
 
-- **Schools by Decade**: Count of schools producing MLB players each decade.
-- **Top Schools**: Identified the top 5 schools with the most MLB players.
-- **Top Schools by Decade**: Ranked the top 3 schools per decade based on player production.
+- **Schools by Decade**: 1990 produced the highest MLB player (494).
+- **Top Schools**: University of Texas at Austin is the top school producer by 107 players.
+- **Top Schools by Decade**: In decade 1970 Arizona State University procuded the most players of 32.
+
+![image](https://github.com/user-attachments/assets/fa590935-b278-4541-8e6c-4c84e9aadc71)
+![image](https://github.com/user-attachments/assets/54c32bed-ed84-4326-8721-e713136b2fc2)
+![image](https://github.com/user-attachments/assets/287be6f1-e273-4be9-b4e2-c050038bc00e)
+
 
 ---
 
