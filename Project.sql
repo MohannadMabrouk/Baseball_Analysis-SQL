@@ -7,13 +7,21 @@ SELECT * FROM salaries;
 
 /* TASK 1: In each decade, how many schools were there that produced MLB players?*/
 
+--Findings
+/*1990 produced the highest MLB player (494)*/
+
 SELECT FLOOR(yearID / 10) * 10 AS decade, COUNT(DISTINCT schoolID) AS new_school
 FROM schools
 GROUP BY decade
-ORDER BY new_school;
+ORDER BY new_school DESC;
+
+
 
 
 /*TASK 2: What are the names of the top 5 schools that produced the most players?*/
+
+--Findings
+/*University of Texas at Austin is the top school producer by 107 players*/
 
 SELECT sd.name_full, COUNT(DISTINCT(playerID)) AS new_sum
 FROM schools s
@@ -24,6 +32,9 @@ LIMIT 5;
 
 
 /*TASK 3: For each decade, what were the names of the top 3 schools that produced the most players?*/
+
+--Findings
+/*In decade 1970 Arizona State University procuded the most players of 32*/
 
 WITH frst AS (SELECT FLOOR(s.yearID / 10) * 10 AS decade, sd.name_full, COUNT(DISTINCT s.playerID) AS num_players
 				FROM schools s
