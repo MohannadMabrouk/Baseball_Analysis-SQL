@@ -53,6 +53,9 @@ ORDER BY decade DESC, top_school;
 -- PART 2: SALARY ANALYSIS
 
 -- TASK 1: Return the top 20% of teams in terms of average annual spending
+--Findings
+/*SFG team had the highest average spending by 143.5 mill*/
+
 WITH ts AS (SELECT teamID, yearID, SUM(salary) AS total_spend
 			FROM salaries
 			GROUP BY teamID, yearID
@@ -70,7 +73,9 @@ FROM sp
 WHERE spend_pct = 1;
 
 
--- TASK 2: For each team, show the cumulative sum of spending over the years [Rolling Calculations]
+-- TASK 2: For each team, show the cumulative sum of spending over the years 
+--Findings
+/*Showed the cumulative sum of spending over the years*/
 
 WITH ts AS (SELECT yearID, teamID, SUM(salary) AS total_spend
 			FROM salaries
@@ -81,7 +86,9 @@ SELECT yearID, teamID,
 		ROUND(SUM(total_spend) OVER(PARTITION BY teamID ORDER BY yearID) / 1000000,1) AS cumulative_sum
 FROM ts;
 
--- TASK 3: Return the first year that each team's cumulative spending surpassed 1 billion [Min / Max Value Filtering]
+-- TASK 3: Return the first year that each team's cumulative spending surpassed 1 billion 
+--Findings
+/*Showed the first year that each team's cumulative spending surpassed 1 billion*/
 
 WITH ts AS (SELECT yearID, teamID, SUM(salary) AS total_spend
 			FROM salaries
