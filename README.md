@@ -25,6 +25,10 @@ The analysis is divided into four main parts, each focused on answering specific
 - **Cumulative Spending**: Calculated cumulative team spending over time.
 - **Billion-Dollar Threshold**: Determined the first year each team surpassed $1 billion in total salary spending.
 
+![image](https://github.com/user-attachments/assets/4927f974-9ab5-47ca-aa56-dc1b456998eb)
+![image](https://github.com/user-attachments/assets/008cf3d5-8ed9-4c85-ba3f-361c5a7489a8)
+![image](https://github.com/user-attachments/assets/f156e115-3307-4c5c-bac7-4a0418d3919e)
+
 ---
 
 ## Part III: Player Career Analysis
