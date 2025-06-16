@@ -37,6 +37,11 @@ The analysis is divided into four main parts, each focused on answering specific
 - **Team Transitions**: Tracked which teams players started and ended their careers with.
 - **Longevity on One Team**: Counted players who spent over a decade on the same team from start to finish.
 
+
+<img width="359" alt="image" src="https://github.com/user-attachments/assets/0f325257-c237-4471-80b0-6bb2e8a540c8" />
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/3ca0aa1d-4a02-4965-9ef6-bf0a0d563dca" />
+<img width="98" alt="image" src="https://github.com/user-attachments/assets/4716643d-4989-4383-b448-d9ad18eafb91" />
+
 ---
 
 ## Part IV: Player Comparison Analysis
@@ -44,6 +49,11 @@ The analysis is divided into four main parts, each focused on answering specific
 - **Shared Birthdays**: Found players who share the same birthdate (1980–1990).
 - **Batting Hand Distribution**: Analyzed the percentage of right, left, and both-handed batters per team.
 - **Physical Trends**: Tracked average debut height and weight by decade, along with decade-over-decade changes.
+
+
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/122e442e-37ef-4563-92a3-89106a1be7b7" />
+<img width="229" alt="image" src="https://github.com/user-attachments/assets/a82175b8-548a-4503-bb94-cb88c73f402f" />
+<img width="213" alt="image" src="https://github.com/user-attachments/assets/381815eb-5fa1-49da-97fc-474048aa0051" />
 
 ---
 
