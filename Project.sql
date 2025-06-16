@@ -111,6 +111,8 @@ WHERE rnk = 1;
 -- PART III: PLAYER CAREER ANALYSIS
 
 -- TASK1: For each player, calculate their age at their first (debut) game, their last game, and their career length (all in years). Sort from longest career to shortest career.
+-- Findings
+/*Nicholas had the highest career years of 35 years*/
 
 SELECT	nameGiven,
 		TIMESTAMPDIFF(YEAR , CAST(CONCAT(birthYear, '-', birthMonth, '-', birthDay) AS DATE), debut) AS starting_age,
@@ -121,6 +123,8 @@ ORDER BY career_length DESC;
 
 
 -- TASK2: What team did each player play on for their starting and ending years? 
+-- Findings
+/*Found the starting and ending teams for wach player*/
 
 SELECT	p.nameGiven,
 		s.teamID AS starting_team, s.yearID AS starting_year, e.teamID AS ending_team, e.yearID AS ending_year
@@ -133,6 +137,8 @@ FROM	players p	INNER JOIN salaries s
 
 
 -- TASK3: How many players started and ended on the same team and also played for over a decade?
+-- Findings
+/*26 players started and ended on the same team*/
 
 WITH player_states AS (SELECT	p.nameGiven,
 							s.teamID AS starting_team, s.yearID AS starting_year, e.teamID AS ending_team, e.yearID AS ending_year
@@ -153,6 +159,8 @@ FROM player_states;
 
 -- TASK 1: Which players have the same birthday?
 
+-- Findings
+/*found the players have the same birthday*/
 WITH bn AS (SELECT	CAST(CONCAT(birthYear, '-', birthMonth, '-', birthDay) AS DATE) AS birthdate,
 					nameGiven
 			FROM	players)
@@ -165,6 +173,8 @@ ORDER BY birthdate;
 
 -- TASK 2: Create a summary table that shows for each team, what percent of players bat right, left and both. 
 
+-- Findings
+/*found the percent of players bat right, left and both.*/
 SELECT	s.teamID,
 		ROUND(SUM(CASE WHEN p.bats = 'R' THEN 1 ELSE 0 END) / COUNT(p.playerID) * 100, 1) AS right_hand,
         ROUND(SUM(CASE WHEN p.bats = 'L' THEN 1 ELSE 0 END) / COUNT(p.playerID) * 100, 1) AS left_hand,
@@ -175,6 +185,9 @@ GROUP BY s.teamID;
 
 
 -- TASK 3: How have average height and weight at debut game changed over the years, and what's the decade-over-decade difference?
+
+-- Findings
+/*average height and weight over decades*/
 
 WITH hw AS (SELECT	FLOOR(YEAR(debut) / 10) * 10 AS decade, ROUND(AVG(weight), 2) AS avg_weight, ROUND(AVG(height), 2) AS avg_height
 				FROM	players
